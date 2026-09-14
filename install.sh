@@ -80,7 +80,8 @@ echo "Downloading $REPO@$BRANCH ..."
 curl -fsSL "https://codeload.github.com/$REPO/tar.gz/refs/heads/$BRANCH" -o "$WORKDIR/repo.tar.gz"
 
 echo "Extracting $SKILL_NAME/ ..."
-TOPDIR="$(tar -tzf "$WORKDIR/repo.tar.gz" | head -1 | cut -d/ -f1)"
+TAR_LISTING="$(tar -tzf "$WORKDIR/repo.tar.gz")"
+TOPDIR="$(head -1 <<< "$TAR_LISTING" | cut -d/ -f1)"
 tar -xzf "$WORKDIR/repo.tar.gz" -C "$WORKDIR" "$TOPDIR/$SKILL_NAME"
 
 if [[ ! -f "$WORKDIR/$TOPDIR/$SKILL_NAME/SKILL.md" ]]; then
