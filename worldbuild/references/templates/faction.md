@@ -18,17 +18,17 @@
 - **Symbol:** {{symbol}}
 - **Motto:** {{motto}}
 
-<!-- Omit any line above that doesn't apply or wasn't settled during the interview — never render a field as blank or "N/A." -->
+<!-- Omit any line above that doesn't apply or wasn't settled during the interview. Never render a field as blank or "N/A." -->
 
 ---
 
 ## Public Agenda
 
-<!-- Stated purpose. Note any true/hidden goal explicitly as not public knowledge if one was established, rather than blending it in as if it were open information. -->
+<!-- Stated purpose. If a true or hidden goal was established, note it explicitly as not public knowledge. Do not blend it in as if it were open information. -->
 
 ## Public Perception
 
-<!-- How non-members see this faction — distinct from Public Agenda, which is how the faction presents itself. -->
+<!-- How non-members see this faction. This differs from Public Agenda, which is how the faction presents itself. -->
 
 ## Structure
 
@@ -38,7 +38,7 @@
 
 <!-- Include only if the faction has named positions worth distinguishing. One subsection per rank: -->
 ### {{Rank name}}
-<!-- Qualifications, Appointment/Promotion, Duties, Benefits, Grounds for removal — a few lines each, not a full separate entity. Notable current/past holders link out to Character notes. -->
+<!-- Qualifications, Appointment/Promotion, Duties, Benefits, Grounds for removal. Give a few lines each, not a full separate entity. Notable current and past holders link out to Character notes. -->
 
 ## Membership
 
@@ -46,7 +46,7 @@
 
 ## Internal Politics
 
-<!-- Only include if the faction has real internal fault lines — omit for a genuinely unified faction rather than forcing a thin section. -->
+<!-- Only include if the faction has real internal fault lines. Omit it for a unified faction rather than forcing a thin section. -->
 
 ## Foreign Relations
 

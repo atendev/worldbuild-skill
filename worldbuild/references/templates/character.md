@@ -26,7 +26,7 @@
 - **Alignment:** {{alignment}}
 - **Quotes:** {{quotes}}
 
-<!-- Omit any line above that doesn't apply or wasn't settled during the interview — never render a field as blank or "N/A." This is a long list; most characters will only fill a fraction of it. -->
+<!-- Omit any line above that doesn't apply or wasn't settled during the interview. Never render a field as blank or "N/A." This is a long list, and most characters will fill only a fraction of it. -->
 
 ---
 
@@ -93,4 +93,4 @@
 <!-- Include only if the RPG-stats toggle is yes -->
 ## RPG Character Sheet
 
-<!-- Not every character needs every subsection above filled in — a minor character may only need a few lines under Personal History and Motivation. Omit rather than pad. -->
+<!-- Not every character needs every subsection above filled in. A minor character may need only a few lines under Personal History and Motivation. Omit rather than pad. -->

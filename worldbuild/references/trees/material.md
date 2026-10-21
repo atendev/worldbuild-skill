@@ -1,13 +1,13 @@
 # Material / Resource
 
-WA source: `material.html.twig` — includes fields (melting point, elemental notation) clearly meant for hard-SF/chemistry-literate settings; skip those entirely for a setting that doesn't care about that level of physical detail rather than asking anyway.
+WA source: `material.html.twig`. It includes fields such as melting point and elemental notation that are meant for hard-SF or chemistry-literate settings. Skip those entirely for a setting that does not need that level of physical detail rather than asking anyway.
 
 ## Infobox fields
 
-Shared Name/Status plus: **Type** (metal, fabric, magical substance, chemical compound, biological), **Rarity**, **Common state** (solid/liquid/gas — only if genuinely relevant), **Color**, **Market value**, **Origin/environment**.
+Shared Name/Status plus the following. **Type** is one of metal, fabric, magical substance, chemical compound, or biological. **Rarity**. **Common state**, solid, liquid, or gas, only if relevant. **Color**. **Market value**. **Origin/environment**.
 
 ## Document sections (prose body)
 
-**Properties & Characteristics** (only go into hard physical specifics — density, melting point — if the setting's genre actually cares; a fantasy setting usually just needs "how it behaves and why it matters"), **Discovery/Origin**, **Manufacturing & Refinement** (if it's processed rather than used raw), **Uses** — common, cultural, and industrial, kept distinct since a material can be mundane in one context and sacred in another, **Hazards**, **Regulation** (if its use/trade is restricted — relation to a Faction/Political context), **Related Items & Technologies** (relation lists).
+**Properties & Characteristics**. Go into hard physical specifics such as density and melting point only if the setting's genre needs them. A fantasy setting usually needs only how the material behaves and why it matters. **Discovery/Origin**. **Manufacturing & Refinement**, if the material is processed rather than used raw. **Uses**, covering common, cultural, and industrial uses separately, since a material can be mundane in one context and sacred in another. **Hazards**. **Regulation**, if its use or trade is restricted, as a relation to a Faction or political context. **Related Items & Technologies**, as relation lists.
 
 ## Then append `_shared.md`

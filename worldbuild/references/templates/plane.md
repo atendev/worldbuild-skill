@@ -15,7 +15,7 @@
 - **Native inhabitants:** {{native inhabitants}}
 - **Access:** {{access}}
 
-<!-- Omit any line above that doesn't apply or wasn't settled during the interview — never render a field as blank or "N/A." -->
+<!-- Omit any line above that doesn't apply or wasn't settled during the interview. Never render a field as blank or "N/A." -->
 
 ---
 

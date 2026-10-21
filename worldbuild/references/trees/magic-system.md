@@ -1,24 +1,24 @@
 # Magic System
 
-No dedicated WA "magic system" template exists — this is hand-drafted, informed loosely by `spell.html.twig`'s field vocabulary (school, discipline, element, source) for what a system needs to define in order for individual spells to make sense later.
+No dedicated WA "magic system" template exists. This tree is hand-drafted, loosely based on the field vocabulary in `spell.html.twig`, which covers school, discipline, element, and source, to define what a system needs so that individual spells make sense later.
 
 ## Infobox fields
 
-Shared Name/Status plus: **Source of power** (a deity, an innate trait, a studied discipline, a natural force), **Access** (who can use it — anyone, a bloodline, the trained, the chosen), **Cost/Limitation type** (short phrase — physical toll, resource consumption, moral cost, time).
+Shared Name/Status plus the following. **Source of power**, such as a deity, an innate trait, a studied discipline, or a natural force. **Access**, meaning who can use it: anyone, a bloodline, the trained, or the chosen. **Cost/Limitation type**, a short phrase such as physical toll, resource consumption, moral cost, or time.
 
 ## Branches
 
-- What actually powers this magic — where does the energy/authority come from, and is that source finite, renewable, or contested?
-- Who can access it, and how does someone gain that access (born with it, trained into it, granted it)?
-- What does it cost to use — and is the cost consistent, or does it scale with power/frequency of use?
-- What are the hard limits — things this magic categorically cannot do, regardless of skill or cost? (A system with no real limits tends to flatten narrative tension; worth asking explicitly rather than leaving open by default.)
-- Is magic common knowledge or something hidden/feared/regulated? (Fact-find against Faction/Political material first — a system with legal restrictions implies an enforcing body worth linking.)
-- What does using this magic actually look, sound, and feel like — to the caster, and to anyone nearby? Absent from any WA field, but this is what a writer needs most when an actual scene involves magic being used; a system can be mechanically well-defined and still leave a writer with nothing to describe in the moment.
+- What powers this magic? Where does the energy or authority come from, and is that source finite, renewable, or contested?
+- Who can access it, and how does someone gain that access? Are they born with it, trained into it, or granted it?
+- What does it cost to use? Is the cost consistent, or does it scale with power or frequency of use?
+- What are the hard limits, the things this magic cannot do regardless of skill or cost? A system with no real limits tends to flatten narrative tension, so ask this explicitly rather than leaving it open.
+- Is magic common knowledge, or is it hidden, feared, or regulated? Fact-find against Faction and political material first. A system with legal restrictions implies an enforcing body worth linking.
+- What does using this magic look, sound, and feel like, to the caster and to anyone nearby? No WA field covers this, but a writer needs it most when a scene involves magic being used. A system can be mechanically well defined and still leave a writer with nothing to describe in the moment.
 
 ## Document sections (prose body)
 
-**Source & Nature**, **Access & Training**, **Costs & Limitations**, **Sensory Manifestation** (what it looks/sounds/feels like in use — for the caster and for observers, since these can differ), **Schools/Disciplines** (if the system subdivides into distinct branches of practice — each could later become its own note if it grows detailed enough, or stay as subsections here if not), **Social Status** (how society at large regards practitioners), **History** (how this system of magic came to be, or was discovered).
+**Source & Nature**. **Access & Training**. **Costs & Limitations**. **Sensory Manifestation**, meaning what it looks, sounds, and feels like in use, for the caster and for observers, since these can differ. **Schools/Disciplines**, if the system subdivides into distinct branches of practice. Each could later become its own note if it grows detailed enough, or stay as a subsection here if not. **Social Status**, how society at large regards practitioners. **History**, how this system of magic came to be or was discovered.
 
-Individual named spells/techniques belong in their own Spell/Technique notes once there are enough of them to be worth linking individually — see that category's tree — rather than being enumerated here.
+Individual named spells/techniques belong in their own Spell/Technique notes once there are enough of them to be worth linking individually. See that category's tree. Do not enumerate them here.
 
 ## Then append `_shared.md`

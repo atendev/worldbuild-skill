@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Interactive installer for the `worldbuild` skill. Run it and answer the
-# prompts — no flags needed:
+# prompts. No flags are needed:
 #
 #   curl -fsSL https://raw.githubusercontent.com/atendev/worldbuild-skill/main/install.sh | bash
 
@@ -11,15 +11,15 @@ REPO="atendev/worldbuild-skill"   # <-- change this
 BRANCH="main"
 SKILL_NAME="worldbuild"
 
-# curl | bash consumes stdin for the script itself, so prompts need to read
-# from the terminal directly (/dev/tty) rather than stdin in that case.
+# curl | bash consumes stdin for the script itself, so prompts read from the
+# terminal directly (/dev/tty) rather than stdin in that case.
 ask() {
   local prompt="$1" default="${2:-}" answer
   if [[ -t 0 ]]; then
     read -r -p "$prompt" answer
   elif ! read -r -p "$prompt" answer < /dev/tty 2>/dev/null; then
     echo
-    echo "error: this installer needs to ask you a question, but no terminal is available to read your answer from." >&2
+    echo "error: this installer needs to ask you a question, but no terminal is available to read your answer." >&2
     echo "Download the script first, then run it directly instead of piping it through bash:" >&2
     echo "  curl -fsSL https://raw.githubusercontent.com/atendev/worldbuild-skill/main/install.sh -o install.sh && bash install.sh" >&2
     exit 1
@@ -29,10 +29,10 @@ ask() {
 
 echo "Where would you like to install the worldbuild skill?"
 echo
-echo "  1) Claude Code — global, all projects   (~/.claude/skills/worldbuild)  [recommended]"
-echo "  2) Claude Code — this project only        (./.claude/skills/worldbuild)"
-echo "  3) Codex CLI — this project                (./.codex/skills/worldbuild)   [community convention, unverified]"
-echo "  4) Gemini CLI — this project               (./.gemini/skills/worldbuild)  [community convention, unverified]"
+echo "  1) Claude Code, global (all projects)   (~/.claude/skills/worldbuild)  [recommended]"
+echo "  2) Claude Code, this project only        (./.claude/skills/worldbuild)"
+echo "  3) Codex CLI, this project                (./.codex/skills/worldbuild)   [community convention, unverified]"
+echo "  4) Gemini CLI, this project               (./.gemini/skills/worldbuild)  [community convention, unverified]"
 echo "  5) Custom path"
 echo
 choice="$(ask "Enter a number [1]: " "1")"
@@ -58,9 +58,9 @@ esac
 
 if [[ "$choice" == "3" || "$choice" == "4" ]]; then
   echo
-  echo "Note: this copies the skill to the right folder, but whether that CLI actually"
-  echo "follows SKILL.md's routing instructions (loading only the reference file it"
-  echo "needs, rather than everything at once) hasn't been verified — worth testing."
+  echo "Note: this copies the skill to the right folder, but nobody has verified that"
+  echo "the CLI follows SKILL.md's routing instructions (loading only the reference"
+  echo "file it needs, rather than everything at once). Test it before relying on it."
 fi
 
 if [[ -d "$TARGET" ]]; then
@@ -85,7 +85,7 @@ TOPDIR="$(head -1 <<< "$TAR_LISTING" | cut -d/ -f1)"
 tar -xzf "$WORKDIR/repo.tar.gz" -C "$WORKDIR" "$TOPDIR/$SKILL_NAME"
 
 if [[ ! -f "$WORKDIR/$TOPDIR/$SKILL_NAME/SKILL.md" ]]; then
-  echo "error: SKILL.md not found in $SKILL_NAME/ — check that the skill lives at the repo root under that name." >&2
+  echo "error: SKILL.md not found in $SKILL_NAME/. Check that the skill lives at the repo root under that name." >&2
   exit 1
 fi
 

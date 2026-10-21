@@ -1,35 +1,35 @@
 # Culture
 
-WA source: `ethnicity.html.twig` — one of the richest single-template matches found, especially for naming conventions and social ideals.
+WA source: `ethnicity.html.twig`. It is one of the richest single-template matches, especially for naming conventions and social ideals.
 
 ## Infobox fields
 
-Shared Name/Status plus: **Species** (relation, if this culture belongs to a specific species/people), **Geographic origin/homeland** (relation to Location), **Technological level**.
+Shared Name/Status plus: **Species**, a relation, if this culture belongs to a specific species or people; **Geographic origin/homeland**, a relation to Location; **Technological level**.
 
 ## Document sections (prose body)
 
-**Naming Conventions** — male, female, unisex, and family/surname patterns, kept as its own clearly-delineated section since it gets referenced constantly when generating new named characters.
+**Naming Conventions.** Male, female, unisex, and family or surname patterns. Keep this as its own section, since it gets referenced constantly when generating new named characters.
 
-**Social Ideals** — beauty ideals, gender ideals, courtship ideals, relationship ideals: what this culture holds up as desirable, which is often more narratively useful than a flat list of "values."
+**Social Ideals.** Beauty ideals, gender ideals, courtship ideals, and relationship ideals. These are what this culture holds up as desirable, which is often more narratively useful than a flat list of "values."
 
-**Customs & Etiquette** — daily customs, dress code, etiquette, taboos.
+**Customs & Etiquette.** Daily customs, dress code, etiquette, and taboos.
 
-**Cuisine & Food Culture** — absent from WA's `ethnicity` fields entirely, despite being one of the most commonly-used and narratively productive worldbuilding elements there is (what's eaten, dining customs, food taboos, what a meal signals socially). Worth asking even briefly rather than leaving it to be improvised inconsistently later.
+**Cuisine & Food Culture.** WA's `ethnicity` fields omit this, though it is one of the most commonly used and narratively productive worldbuilding elements. It covers what is eaten, dining customs, food taboos, and what a meal signals socially. Ask about it, even briefly, rather than leaving it to be improvised inconsistently later.
 
-**Rites of Passage** — coming-of-age rites, funerary customs, and any other major life-transition ritual not substantial enough to warrant its own Holiday/Custom note.
+**Rites of Passage.** Coming-of-age rites, funerary customs, and any other major life-transition ritual not substantial enough for its own Holiday/Custom note.
 
-**Shared Values** — what this culture broadly agrees matters, distinct from Social Ideals (which is more about personal/romantic ideals specifically).
+**Shared Values.** What this culture broadly agrees matters. This differs from Social Ideals, which covers personal and romantic ideals.
 
-**Historical Figures** — link to Character notes rather than duplicating their detail.
+**Historical Figures.** Link to Character notes rather than duplicating their detail.
 
-**Myths & Legends** — link to Myth notes.
+**Myths & Legends.** Link to Myth notes.
 
-**Art** — if visual/performing arts are culturally distinctive enough to be worth documenting.
+**Art.** Include if visual or performing arts are culturally distinctive enough to document.
 
-**Major Organizations** — relation to Faction notes strongly associated with this culture.
+**Major Organizations.** Relations to Faction notes strongly associated with this culture.
 
-**Languages** — relation to Language notes.
+**Languages.** Relations to Language notes.
 
 ## Then append `_shared.md`
 
-Connections is especially worth taking seriously here — Culture sits at the intersection of Species, Faction, Location, and Language more than almost any other category.
+Take Connections especially seriously here. Culture touches Species, Faction, Location, and Language more than almost any other category.

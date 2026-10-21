@@ -1,11 +1,11 @@
 # Bestiary (compilation)
 
-Shallow scope/audience/format tree — see SKILL.md Step 4, compilation mode. Compiles across Species (non-sapient branch) and Creature notes.
+Shallow scope/audience/format tree. See SKILL.md Step 4, compilation mode. Compiles across the non-sapient branch of Species notes and Creature notes.
 
 ## Questions
 
-- Scope — every non-sapient species/creature, or only ones a character is likely to actually encounter in the story (dangerous, narratively relevant, or setting-defining ones)?
-- Format — does the user want a game-style stat-forward compilation (danger level, habitat, abilities up front) or a naturalist-style prose compilation?
+- Scope. Should it cover every non-sapient species or creature, or only those a character is likely to encounter in the story, such as dangerous, narratively relevant, or setting-defining ones?
+- Format. Does the user want a game-style, stat-forward compilation with danger level, habitat, and abilities up front, or a naturalist-style prose compilation?
 
 ## Synthesis approach
 

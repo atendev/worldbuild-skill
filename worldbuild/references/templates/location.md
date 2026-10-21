@@ -15,7 +15,7 @@
 - **Contested by:** {{contested by}}
 - **Population:** {{population}}
 
-<!-- This covers every possible field across all four location types, not every field for any one entry. Omit any line above that doesn't apply or wasn't settled during the interview — never render a field as blank or "N/A." -->
+<!-- This lists every possible field across all four location types, not every field for any one entry. Omit any line above that doesn't apply or wasn't settled during the interview. Never render a field as blank or "N/A." -->
 
 ---
 
@@ -25,7 +25,7 @@
 
 ## Natural Resources
 
-<!-- The three sections above are the baseline, used regardless of type. Everything below is additional, included only for the matching type. -->
+<!-- The three sections above are the baseline for every type. Everything below is extra and applies only to the matching type. -->
 
 <!-- Include only if Type = Settlement -->
 ## Demographics
@@ -53,4 +53,4 @@
 ## Architecture
 ## History
 
-<!-- Type = Region / Territory and Type = Wilderness / Natural feature use only the baseline three sections above, plus whichever Structure/landmark sections (usually Sensory, Hazards) genuinely apply if the location has recurring narrative presence — see location.md tree, Wilderness branch. -->
+<!-- Type = Region / Territory and Type = Wilderness / Natural feature use only the baseline three sections above, plus whichever Structure/landmark sections (usually Sensory, Hazards) apply if the location recurs in the narrative. See location.md tree, Wilderness branch. -->
