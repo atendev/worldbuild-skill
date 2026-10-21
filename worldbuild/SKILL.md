@@ -9,6 +9,19 @@ A single entry point for building and maintaining worldbuilding documents for an
 
 Read this file's routing logic every time the skill is invoked. Only read the specific tree file(s) in `references/trees/` that apply to the current request, not the whole folder.
 
+## Unslop check
+
+At the start of every invocation, check whether the `unslop` skill is installed. It is installed if `unslop` appears in the available skills list, or if an `unslop/SKILL.md` exists in the host's skills folder, for example `~/.claude/skills/unslop/`.
+
+If it is installed, load it and apply it to:
+
+- Everything you write to the user in chat, including questions, recommendations, continuity flags, and summaries.
+- Every new tree file or template this skill drafts, before you show it to the user or save it. Steps 2a and 6 are the two places this happens.
+
+Don't run unslop over the world content written in Step 8. That prose carries the user's voice and their setting's tone, and unslop's rules are written for explanatory text, not fiction.
+
+If it is not installed, continue without it. Mention it once, in one line, and recommend installing the unslop skill from https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md. Don't repeat the suggestion later in the session.
+
 ## Step 1. Locate the worldbuilding notes
 
 Before anything else, find where the user's worldbuilding material lives on disk. This is usually a directory of markdown or plain-text notes, but treat that loosely. It could be a single large document, a folder of files with no particular structure, or a well-organized set of subfolders by category. Ask the user if it isn't obvious from context or from files already open or referenced in the conversation. Do not assume any particular note-taking tool, folder convention, or file format. All references below to "the notes" mean whatever this location turns out to be.
@@ -25,7 +38,7 @@ Check the user's general idea (however loosely stated) against the tree files li
 
 Don't silently improvise a tree and run with it. Treat tree creation as a short, separate grilling-style pass. Work out what actually varies for this category (is there a type-gate the way Location has settlement/wilderness/structure/region? Some categories won't need one) and what would make two instances of this category meaningfully different from each other. If the notes already contain examples of this category written in prose but never templatized, scan a few of them first. The tree should reflect how the user already writes this kind of thing, not a generic invented structure. Check the WA source column in `references/trees/_index.md` too. If a WorldAnvil template is noted for this category, pull it (from `iamromeo/worldanvil-templates`, `article-templates/base-template/`) and fold its fields in the same way Location and Faction were built, rather than drafting thin and reconciling later.
 
-Once drafted, show the user the proposed tree and confirm it looks right before using it. A bad tree wastes an entire subsequent interview on the wrong branches. Then write it to `references/trees/{category}.md`, derive its matching `references/templates/{category}.md` (see Step 6 below), and update the index: flip both statuses, and note the WA source used if any. Then proceed into Step 3 using the tree that was just built.
+Once drafted, run it through unslop if it is installed (see "Unslop check"), then show the user the proposed tree and confirm it looks right before using it. A bad tree wastes an entire subsequent interview on the wrong branches. Then write it to `references/trees/{category}.md`, derive its matching `references/templates/{category}.md` (see Step 6 below), and update the index: flip both statuses, and note the WA source used if any. Then proceed into Step 3 using the tree that was just built.
 
 ## Step 3. Gather what's already known before asking anything
 
@@ -45,7 +58,7 @@ For new-entity and revision modes: before starting the structured interview, ask
 
 ## Step 6. Resolve the output template
 
-Load `references/templates/{category}.md` as the default output skeleton. It is a mechanical derivation of the category's Infobox fields and Document sections from its tree file, and it exists for every category with a Done tree. If a category has a tree but no template yet, derive one now the same way (Infobox fields become the skeleton's infobox block, Document sections become headers, type-conditional sections marked as such) and save it to that path for reuse.
+Load `references/templates/{category}.md` as the default output skeleton. It is a mechanical derivation of the category's Infobox fields and Document sections from its tree file, and it exists for every category with a Done tree. If a category has a tree but no template yet, derive one now the same way (Infobox fields become the skeleton's infobox block, Document sections become headers, type-conditional sections marked as such) and save it to that path for reuse. Run the new template through unslop first if it is installed (see "Unslop check").
 
 Also ask, if not already stated, whether the user wants this written against a *different* formatting or style guide document of their own. If they point to one, read it and fold any fields or conventions it requires into the assembled tree as additional branches before the handoff. For example, if it requires a specific sensory-detail field the default template doesn't have, that becomes a real interview question, not something bolted on afterward. Treat the default template as a checklist to diff the custom one against, so nothing the category normally covers gets silently dropped just because the user's template didn't ask for it.
 
