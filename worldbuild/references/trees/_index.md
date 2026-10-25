@@ -2,7 +2,7 @@
 
 Read this file first to decide which tree files to load. Don't open every tree file to check. Shared fragments common to every *entity* tree live in `_shared.md`. Always load it alongside whichever entity category file applies. Compilation and meta categories generally don't use `_shared.md`.
 
-Each entity category has a companion output skeleton in `references/templates/{same-filename}.md`, described in SKILL.md Step 6. Compilation and meta categories don't have templates. Their shape comes from synthesis, not a fixed skeleton.
+Each entity category has a companion output skeleton in `references/templates/{same-filename}.md`, described in SKILL.md Step 6. Compilation and meta categories don't have templates. For D&D 5e magic items, use the Artifact tree with `templates/dnd-item.md` in place of `templates/artifact.md`. Their shape comes from synthesis, not a fixed skeleton.
 
 The **WA source** column names the WorldAnvil templates that fed that category, if any. They come from `iamromeo/worldanvil-templates`, `article-templates/base-template/`. Re-fetch from the repo when revising rather than assuming anything is cached locally.
 
@@ -38,6 +38,8 @@ Things that get their own single note, such as a person, place, system, or objec
 | Material / Resource | `material.md` | Done | Done | `material` | Skip hard-chemistry fields such as melting point unless the setting's genre cares |
 | Profession / Occupation | `profession.md` | Done | Done | `profession` | |
 | Myth / Legend | `myth.md` | Done | Done | `myth` | Connects to Culture, Religion, Location, Character without being owned by any one of them |
+| Subclass (D&D 5e) | `subclass.md` | Done | Done | None | D&D 5e only. 2024 feature levels (3/6/10/14). Type gate on whether the class grants subclass spells |
+| Origin / Background (D&D 5e) | `origin.md` | Done | Done | None | D&D 5e only. 2024 background shape: three ability scores, two skills, one tool, equipment, an origin feat |
 
 **Merged into other categories, no separate tree:** Rank/Title into Faction, Political system into Faction, Economic system into Faction, Deity into Character's Divine toggle.
 
