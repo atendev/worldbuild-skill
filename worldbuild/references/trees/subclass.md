@@ -1,10 +1,10 @@
 # Subclass (D&D 5e)
 
-WA source: None. Built from the structure of the user's existing homebrew subclasses. D&D 5e only. Use the 2024 rules unless the user says otherwise: every subclass is chosen at 3rd level and gains features at 3rd, 6th, 10th, and 14th level.
+WA source: None. Built from the structure of the user's existing homebrew subclasses. D&D 5e only. Use the 2024 rules unless the user says otherwise: every subclass is chosen at 3rd level, but the later feature levels differ by class: barbarian, bard, druid, warlock, and wizard use 3/6/10/14 (bard skips 10), rogue 3/9/13/17, sorcerer 3/6/14/18, cleric 3/6/17, monk 3/6/11/17, fighter 3/7/10/15/18, paladin 3/7/15/20, ranger 3/7/11/15, artificer 3/5/9/15. Check the official subclass of the same class before fixing the levels.
 
 ## Infobox fields
 
-Shared Name/Status plus: **Class**; **Source of power** (the patron, tradition, plane, or magic system it draws on, a relation to an existing note, fact-find first); **Feature levels** (3/6/10/14 under 2024 rules); **Practitioners** (who teaches or practices it in the world, a relation to a Faction if one exists).
+Shared Name/Status plus: **Class**; **Source of power** (the patron, tradition, plane, or magic system it draws on, a relation to an existing note, fact-find first); **Feature levels** (per the class's 2024 subclass levels); **Practitioners** (who teaches or practices it in the world, a relation to a Faction if one exists).
 
 ## Type gate: does the class grant subclass spells?
 
@@ -17,7 +17,7 @@ Shared Name/Status plus: **Class**; **Source of power** (the patron, tradition, 
 
 **In the world** (how common they are, whether they are legal, and how factions and religions in the notes treat them. Fact-find the factions first).
 
-**Features by level.** For each feature: what it does, the action it takes, uses and recharge, and how it scales at higher levels. Ask how the feature plays at the table, not only what it does. Two subclasses on the same power source should still play differently, because their classes do.
+**Features by level.** Use the class's own subclass levels. For each feature: what it does, the action it takes, uses and recharge, and how it scales at higher levels. Ask how the feature plays at the table, not only what it does. Two subclasses on the same power source should still play differently, because their classes do.
 
 **Signature resource** (if any: its name, maximum, how it is gained, spent, and recovered. Ask whether it reuses a resource the setting already defines or adds its own).
 

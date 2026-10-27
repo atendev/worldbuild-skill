@@ -17,13 +17,10 @@
 | 5th | {{spells}} |
 | 7th | {{spells}} |
 | 9th | {{spells}} |
+<!-- Use the class's own subclass levels. Rogue is 3/9/13/17, for example -->
 ## 3rd Level
 ### {{feature}}
-## 6th Level
-### {{feature}}
-## 10th Level
-### {{feature}}
-## 14th Level
+## {{level}} Level
 ### {{feature}}
 <!-- Include only if the subclass has one -->
 ## {{Signature Resource}}

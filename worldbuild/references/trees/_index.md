@@ -38,7 +38,7 @@ Things that get their own single note, such as a person, place, system, or objec
 | Material / Resource | `material.md` | Done | Done | `material` | Skip hard-chemistry fields such as melting point unless the setting's genre cares |
 | Profession / Occupation | `profession.md` | Done | Done | `profession` | |
 | Myth / Legend | `myth.md` | Done | Done | `myth` | Connects to Culture, Religion, Location, Character without being owned by any one of them |
-| Subclass (D&D 5e) | `subclass.md` | Done | Done | None | D&D 5e only. 2024 feature levels (3/6/10/14). Type gate on whether the class grants subclass spells |
+| Subclass (D&D 5e) | `subclass.md` | Done | Done | None | D&D 5e only. 2024 feature levels, which differ by class. Type gate on whether the class grants subclass spells |
 | Origin / Background (D&D 5e) | `origin.md` | Done | Done | None | D&D 5e only. 2024 background shape: three ability scores, two skills, one tool, equipment, an origin feat |
 
 **Merged into other categories, no separate tree:** Rank/Title into Faction, Political system into Faction, Economic system into Faction, Deity into Character's Divine toggle.
