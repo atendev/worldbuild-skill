@@ -1,6 +1,6 @@
 ---
 name: worldbuild
-description: Use for creating, revising, or compiling worldbuilding documents for any fictional setting, such as a novel, light novel, game, comic, or tabletop RPG. Covers entities (locations, factions, characters, magic/tech systems, cultures, deities, and any other category the user has notes for), compilation documents (story bibles, glossaries), and meta/template work (genre and theme templates). Trigger this whenever the user wants to flesh out, add, revise, or update any piece of a fictional world's lore, even if they don't say "worldbuilding" (e.g. "add a new faction," "I need to figure out this city," "update the glossary," "what's missing from my magic system"). Requires the /grilling skill to run the interview. Load it when this skill reaches the handoff step.
+description: Use for creating, revising, or compiling worldbuilding documents for any fictional setting, such as a novel, light novel, game, comic, or tabletop RPG. Covers entities (locations, factions, characters, magic/tech systems, cultures, deities, and any other category the user has notes for), compilation documents (story bibles, glossaries), and meta/template work (genre and theme templates). Trigger this whenever the user wants to flesh out, add, revise, or update any piece of a fictional world's lore, even if they don't say "worldbuilding" (e.g. "add a new faction," "I need to figure out this city," "update the glossary," "what's missing from my magic system"). Also trigger on "send it" or "auto-mode", which asks a short settings prompt and then builds the entry with subagents instead of an interview. Requires the /grilling skill to run the interview. Load it when this skill reaches the handoff step.
 ---
 
 # Worldbuild
@@ -21,6 +21,10 @@ If it is installed, load it and apply it to:
 Don't run unslop over the world content written in Step 8. That prose carries the user's voice and their setting's tone, and unslop's rules are written for explanatory text, not fiction.
 
 If it is not installed, continue without it. Mention it once, in one line, and recommend installing the unslop skill from https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md. Don't repeat the suggestion later in the session.
+
+## Auto mode
+
+If the invoking message contains `send it` or `auto-mode`, read `references/auto-mode.md` before Step 1 and follow it. "Send it" replaces the interview only. Auto mode always opens with its settings prompt, then has a grilling subagent answer the interview and an auditing subagent check the draft against canon. It changes Steps 2, 2a, 4, 5, 7, and 8. The other steps run as written.
 
 ## Step 1. Locate the worldbuilding notes
 

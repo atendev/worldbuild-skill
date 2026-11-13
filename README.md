@@ -29,6 +29,16 @@ Once installed, describe what you want to build. You don't need to name the skil
 
 The skill asks where your notes live (any folder of markdown or text files; it doesn't assume a specific note-taking app), resolves which category fits, and gathers relevant existing material. It then invites an open braindump of what you already have in mind, runs the structured interview via `/grilling`, and writes the finished note.
 
+### Auto mode
+
+Start your message with `send it` or `auto-mode`, followed by your idea and anything you already have in mind:
+
+- "send it: a heretic sect inside the Lantern Church that sings the dead back for one night"
+
+Instead of interviewing you, the skill asks a few multiple-choice questions about settings, with the defaults pre-selected. Pick "Use defaults" to skip the rest. A grilling subagent then answers the interview in your place, using your idea and your existing notes, and writes the draft. A separate auditing subagent checks the draft against your notes and sends back any contradiction it can cite. The two go back and forth until the auditor approves, then the note is written. The final report lists everything the agent invented, so you can review those first.
+
+Settings include the grilling model (Opus by default), the audit model (Sonnet by default), how much the agent invents, how it handles conflicts with canon, and whether to stop at a draft for your review. See `worldbuild/references/auto-mode.md` for the full list.
+
 ## What's inside
 
 ```
@@ -37,6 +47,8 @@ worldbuild/
 │                               detection, the full creation loop, gap-handling
 │                               for categories that don't exist yet
 └── references/
+    ├── auto-mode.md           settings prompt, grilling and audit subagent
+    │                          loops for "send it" runs
     ├── trees/                 one file per category: what to ask, in what
     │                          order, and how it branches
     │   ├── _index.md          the category catalog, read this first
