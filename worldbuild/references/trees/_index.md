@@ -38,6 +38,7 @@ Things that get their own single note, such as a person, place, system, or objec
 | Material / Resource | `material.md` | Done | Done | `material` | Skip hard-chemistry fields such as melting point unless the setting's genre cares |
 | Profession / Occupation | `profession.md` | Done | Done | `profession` | |
 | Myth / Legend | `myth.md` | Done | Done | `myth` | Connects to Culture, Religion, Location, Character without being owned by any one of them |
+| Homebrew rule / Game mechanic | `homebrew-rule.md` | Done | Done | None | TTRPG rules rather than lore. Type-gated: Table rule, Character-creation framework, Subsystem. Beyond-WA audit: In the World and Design Notes sections cover lore grounding and DM-only reasoning |
 
 **Merged into other categories, no separate tree:** Rank/Title into Faction, Political system into Faction, Economic system into Faction, Deity into Character's Divine toggle.
 
